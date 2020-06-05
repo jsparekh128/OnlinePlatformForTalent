@@ -1,4 +1,5 @@
 <?php
+#modified page to check
 require 'C:\wamp64\vendor\autoload.php';
 require("fncrypt.php");
 require("config.php");
@@ -36,13 +37,7 @@ $number = mysqli_num_rows($cmd);
 				$msg=$msg."Name can only contain alphabets.<BR>";
 				$flag=false;
 		}
-		/*if(!$value=preg_match("/^[0-9]{1,4}$/",$mcid))
-		{
-				$msg=$msg."Course id can only contain numbers.<BR>";
-				$flag=false;
-		}
-		
-		*/
+
   
 		if (!$value=preg_match("/^[0-9]+$/", $mage))
 		{
