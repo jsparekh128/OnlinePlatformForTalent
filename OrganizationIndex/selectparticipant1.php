@@ -12,7 +12,7 @@ $morgid=$_SESSION['OrganizationId'];
 if(isset($_POST['Submit']))
 {
 $mddlevent=$_POST['ddlevent'];
-if($mddlevent="-1")
+if($mddlevent=="-1")
 {
     ?>
             <script type="text/javascript">
