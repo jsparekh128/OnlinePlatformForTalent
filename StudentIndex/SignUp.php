@@ -145,13 +145,7 @@ $studid=$rset['msid']+1;
 <div class="signup-form">
     <form action="insertreg.php"  method="post">
 		<h2>Create an Account</h2>
-		<p class="hint-text">Sign up with your social media account or email address</p>
-		<div class="social-btn text-center">
-			<a href="#" class="btn btn-primary btn-lg"><i class="fa fa-facebook"></i> Facebook</a>
-			<a href="#" class="btn btn-info btn-lg"><i class="fa fa-twitter"></i> Twitter</a>
-			<a href="#" class="btn btn-danger btn-lg"><i class="fa fa-google"></i> Google</a>
-		</div>
-		<div class="or-seperator"><b>or</b></div>
+		<p class="hint-text">Sign up with your email address</p>
         <div class="form-group">
         	<input type="text" class="form-control input-lg" name="studentid" value="<?php echo $studid;?>" readonly=READONLY required="required">
         </div>
