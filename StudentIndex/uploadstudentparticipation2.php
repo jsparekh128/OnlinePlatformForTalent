@@ -15,11 +15,19 @@ if(isset($_POST['Submit']))
 {
     $meventid=$_SESSION['SEventId'];
     $mhdnumberoffiles=$_POST['hdfilenumber'];
-    $mchckFileUpload=$_POST['chckFileUpload'];
-    //counting
-    $count = count($mchckFileUpload);
-    //implode
-    $selected=implode(",",$mchckFileUpload);
+    if(isset($_POST['chckFileUpload']))
+    {
+        $mchckFileUpload=$_POST['chckFileUpload'];
+        //counting
+        $count = count($mchckFileUpload);
+        //implode
+        $selected=implode(",",$mchckFileUpload);
+
+    }
+    else{
+        $count=0;
+    }
+    
 
     if($count != $mhdnumberoffiles)
     {
