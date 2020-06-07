@@ -27,7 +27,9 @@ if (isset($_POST["btnupdate"]))
                 $allowed_image_extension = array(
                     "png",
                     "jpg",
-                    "jpeg"
+                    "jpeg",
+                    "JPG",
+                    "JPEG"
                 );
 
    

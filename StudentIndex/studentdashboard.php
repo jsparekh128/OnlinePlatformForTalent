@@ -36,7 +36,7 @@ include("studentheader.php");
                         <div class="card-body">
                         <div class="clearfix">
                             <div class="float-left">
-                            <i class="fa fa-mortar-board text-success icon-lg"></i>
+                            <i class="fa fa-mortar-board text-info icon-lg"></i>
                             </div>
                             <div class="float-right">
                             <p class="mb-0 text-right">Images Uploaded</p>
@@ -55,7 +55,7 @@ include("studentheader.php");
                         <div class="card-body">
                         <div class="clearfix">
                             <div class="float-left">
-                            <i class="fa fa-mortar-board text-success icon-lg"></i>
+                            <i class="fa fa-mortar-board text-info icon-lg"></i>
                             </div>
                             <div class="float-right">
                             <p class="mb-0 text-right">Videos Uploaded</p>
@@ -74,7 +74,7 @@ include("studentheader.php");
                         <div class="card-body">
                         <div class="clearfix">
                             <div class="float-left">
-                            <i class="fa fa-mortar-board text-success icon-lg"></i>
+                            <i class="fa fa-mortar-board text-info icon-lg"></i>
                             </div>
                             <div class="float-right">
                             <p class="mb-0 text-right">Events Participation</p>
@@ -92,7 +92,7 @@ include("studentheader.php");
                         <div class="card-body">
                         <div class="clearfix">
                             <div class="float-left">
-                            <i class="fa fa-mortar-board text-success icon-lg"></i>
+                            <i class="fa fa-mortar-board text-info icon-lg"></i>
                             </div>
                             <div class="float-right">
                             <p class="mb-0 text-right">Winner</p>

@@ -9,7 +9,7 @@ session_start();
     if(isset($_SESSION['StudId']))
     {
         $mstudid=$_SESSION['StudId'];
-        $sql="Select u.UploadMasterId,c.CategoryMasterName,d.SubCategoryMasterName,u.UploadFileType,u.UploadPath from uploadmaster u,categorymaster c,subcategorymaster d,studentdetail s where u.StudentId=s.StudentId and u.CategoryMasterId=c.CategoryMasterId and u.SubCategoryMasterId=d.SubCategoryMasterId and u.StudentId=1 and u.isActive=1 and u.isNull=0";
+        $sql="Select u.UploadMasterId,c.CategoryMasterName,d.SubCategoryMasterName,u.UploadFileType,u.UploadPath from uploadmaster u,categorymaster c,subcategorymaster d,studentdetail s where u.StudentId=s.StudentId and u.CategoryMasterId=c.CategoryMasterId and u.SubCategoryMasterId=d.SubCategoryMasterId and u.StudentId=$mstudid and u.isActive=1 and u.isNull=0";
         $cmd=mysqli_query($con,$sql);
       
         

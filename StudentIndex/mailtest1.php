@@ -40,7 +40,7 @@ function sendMail($email,$token)
 
 		   /* Set the mail message body. */
 			 $mail->IsHTML(true);
-		   $mail->Body = '<html><p>Thank you for signing up on our site. Please click on the link below to verify your account:.</p>
+		   	$mail->Body = '<html><p>Thank you for signing up on our site. Please click on the link below to verify your account:.</p>
 			<a href="http://localhost/project/StudentIndex/VerificationUpload.php?token=' . $token . '">Verify Email!</a></html>';
 
 		   /* Finally send the mail. */

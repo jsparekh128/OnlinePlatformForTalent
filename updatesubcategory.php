@@ -51,10 +51,12 @@ $rset=mysqli_fetch_array($cmd);
                                 </div>
                                
 									<div class="form-group row">
-                                    <label for="example-search-input" class="col-sm-2 col-form-label"> Select Category Name</label>			
+                                    <label for="example-search-input" class="col-sm-2 col-form-label"> Select Category Name</label>
+                                    			
 									
 									<div class="col-sm-3">
                                     <select name="ddlcategoryid">
+                                    <option value="-1">--Select Category Name--</option>
                                     <?php
                                     $query="Select * from CategoryMaster";
                                     $cmd1=mysqli_query($con,$query);
@@ -66,11 +68,15 @@ $rset=mysqli_fetch_array($cmd);
                                         if($row['CategoryMasterId']==$rset['CategoryMasterId'])
                                         {
                                     ?>
-                                    <option value="<?php echo $row['CategoryMasterId']; ?> selected"><?php echo $row['CategoryMasterName']; ?></option>
-                                        <?php } ?>
-                                    <option value="-1">--Select Category Name--</option>
+                                    <option value="<?php echo $row['CategoryMasterId']; ?>" selected><?php echo $row['CategoryMasterName']; ?></option>
+                                        <?php } 
+                                        else{
+                                        
+
+                                            ?>
                                     <option value="<?php echo $row['CategoryMasterId']; ?>"><?php echo $row["CategoryMasterName"]; ?> </option>
                                     <?php
+                                        }
                                     }
                                     ?>
                                     </select>

@@ -7,7 +7,7 @@ if(isset($_POST["action"]))
  if($_POST["action"] == "ddlcategory")
  {
      $categoryid=$_POST["query"];
-  $query = "SELECT SubCategoryMasterId,SubCategoryMasterName FROM subcategorymaster WHERE CategoryMasterId=$categoryid GROUP BY SubCategoryMasterId";
+  $query = "SELECT SubCategoryMasterId,SubCategoryMasterName FROM subcategorymaster WHERE CategoryMasterId=$categoryid and isActive=1 and isNull=0 GROUP BY SubCategoryMasterId";
   
   $result = mysqli_query($con,$query);
   $output .= '<option value="-1">--Select Sub Category--</option>';

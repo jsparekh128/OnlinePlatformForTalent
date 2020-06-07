@@ -86,7 +86,7 @@ include("adminheader.php");
 				<td style="text-align:center"><?php echo $rows['isCreatedBy']; ?></td>
 				<td style="text-align:center"><?php echo $rows['isUpdatedBy']; ?></td>
 				<td><a class="btn btn-success" href="updatesubcategory.php?psubcatcode=<?php echo $rows['SubCategoryMasterId'];?>">Edit</a> </td>
-				<td><a class="btn btn-danger" href="subcategorydelete.php?psubcatcode=<?php echo $rows['SubCategoryMasterId'];?>">Delete</a> </td>
+				<td><a class="btn btn-danger" href="deletesubcategory.php?psubcatcode=<?php echo $rows['SubCategoryMasterId'];?>">Delete</a> </td>
             </tr>
     <?php     
         }

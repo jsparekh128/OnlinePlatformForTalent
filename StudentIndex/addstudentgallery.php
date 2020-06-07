@@ -60,7 +60,7 @@ include("studentheader.php");
                 <h4>Select Category:</h4>
                     <select name="ddlcategory" id="ddlcategory" class="form-control action">
                         <?php
-                            $sql="Select CategoryMasterId,CategoryMasterName from CategoryMaster";
+                            $sql="Select CategoryMasterId,CategoryMasterName from CategoryMaster where isActive=1";
                             $cmd=mysqli_query($con,$sql);
                             
                         ?>
