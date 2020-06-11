@@ -43,7 +43,7 @@ input[type=submit]:hover {
 <h3>Contact Form</h3>
 
 <div class="container">
-  <form action="insertcontact.php" method = "post">
+  <form action="insertcontact.php" method="post">
     <label for="fname">Name</label>
     <input type="text"  name="firstname" placeholder="Your name.." Required>
 

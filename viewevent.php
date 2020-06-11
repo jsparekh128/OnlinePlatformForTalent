@@ -1,7 +1,7 @@
 <?php 
 require("config.php");
 
-$query="select e.EventId,e.EventName,e.EventStartDate,e.EventEndDate,c.CategoryMasterName,s.SubCategoryMasterName,e.FileType,e.NumberOfFiles,e.EventDescription from events e,CategoryMaster c,SubCategoryMaster s where e.CategoryMasterId=c.CategoryMasterId and e.SubCategoryMasterId=s.SubCategoryMasterId";
+$query="select e.EventId,e.EventName,e.EventStartDate,e.EventEndDate,c.CategoryMasterName,s.SubCategoryMasterName,e.FileType,e.NumberOfFiles,e.EventDescription from events e,CategoryMaster c,SubCategoryMaster s where e.CategoryMasterId=c.CategoryMasterId and e.SubCategoryMasterId=s.SubCategoryMasterId and e.isNull=0";
 $result= mysqli_query($con,$query);
 ?>
  

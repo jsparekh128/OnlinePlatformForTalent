@@ -10,11 +10,11 @@ if(session_status()==PHP_SESSION_NONE)
 $mstudid=$_SESSION['StudId'];
   }
 
-$cmd1=mysqli_query($con,"SELECT count(UploadMasterId) from uploadmaster where StudentId=$mstudid and UploadFileType=1");
+$cmd1=mysqli_query($con,"SELECT count(UploadMasterId) from uploadmaster where StudentId=$mstudid and UploadFileType=1 and isNull=0");
 $res1=mysqli_fetch_array($cmd1);
 $timage=$res1[0];
 
-$cmd2=mysqli_query($con,"SELECT count(UploadMasterId) from uploadmaster where StudentId=$mstudid and UploadFileType=2");
+$cmd2=mysqli_query($con,"SELECT count(UploadMasterId) from uploadmaster where StudentId=$mstudid and UploadFileType=2 and isNull=0");
 $res2=mysqli_fetch_array($cmd2);
 $tvideo=$res2[0];
 
@@ -22,7 +22,7 @@ $cmd3=mysqli_query($con,"SELECT count(ParticipationMasterId) from participationm
 $res3=mysqli_fetch_array($cmd3);
 $tevent=$res3[0];
 
-$cmd4=mysqli_query($con,"SELECT count(OrganizationId) from organizationdetail");
+$cmd4=mysqli_query($con,"SELECT count(WinnerMas terId) from winnermaster where StudentId=$mstudid");
 $res4=mysqli_fetch_array($cmd4);
 $torg=$res4[0];
 

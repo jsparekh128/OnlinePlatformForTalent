@@ -54,7 +54,7 @@ include("adminheader.php");
                                                 <th> isCreatedBy </th>
                                                 <th> isUpdatedBy</th>
                                                 <th>Action</th>
-                                                <th>Action</th>
+                                              
                                                 </tr>
                                             </thead>   
             
@@ -83,7 +83,8 @@ include("adminheader.php");
 				<td><?php echo $rows['isCreatedBy']; ?></td>
 				<td><?php echo $rows['isUpdatedBy']; ?></td>
 				<td><a class="btn btn-success" href="updatecategory.php?pocode=<?php echo $rows['CategoryMasterId'];?>">Edit</a> </td>
-				<td><a class="btn btn-danger" href="deletecategory.php?pocode=<?php echo $rows['CategoryMasterId'];?>">Delete</a> </td>
+                
+				
              </tr>
     <?php     
         }

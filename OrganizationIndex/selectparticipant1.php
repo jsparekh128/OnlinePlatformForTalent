@@ -107,7 +107,7 @@ $cmd2=mysqli_query($con,$sql2);
                     while($rows2=mysqli_fetch_array($cmd2))
                     {
                         ?>
-                        <td><input type="checkbox" class="form-control" name="chckFileUpload1" value="<?php echo $rows2['StudentId']; ?>"></td>
+                        <td><input type="checkbox" class="form-control" name="chckFileUpload1[]" value="<?php echo $rows2['StudentId']; ?>"></td>
                         <td><?php echo $rows2['CompetitionMasterId']; ?></td>
                         <td><?php echo $rows2['StudentName']; ?></td>
                         <?php
@@ -120,7 +120,7 @@ $cmd2=mysqli_query($con,$sql2);
                                     ?>
                                    <td>
                                     
-                                 <a href="<?php echo $dirname; ?>" data-fancybox="gallery">
+                                    <a href="<?php echo $dirname; ?>" data-fancybox="gallery">
                                     <img src="<?php echo $dirname; ?>" width="150px" height="150px"/>
                                     </td>
                                 
@@ -137,11 +137,14 @@ $cmd2=mysqli_query($con,$sql2);
                                 }
 
                             }
+                            ?>
+                              </tr>
+                              <?php
                     
 
                     }
                     ?>
-                    </tr>
+                  
                
                 </table>
                 <br/>

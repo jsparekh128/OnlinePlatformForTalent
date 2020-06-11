@@ -20,12 +20,13 @@ if(isset($_POST['Submit']))
     }
     else
     {
-        $sql="Insert into contact(Name,EmailId,College,Query) values('$mfname','$mlname','$mcollege','$msubject')";
+        $sql="Insert into contact(Name,EmailId,College,Query,Reply) values('$mfname','$mlname','$mcollege','$msubject',0)";
+        
         $cmd=mysqli_query($con,$sql);
         ?>
         <script>
-        alert("Your query is submiited. Wait for response");
-        window.location.href="home.php";
+            alert('Your query is submitted. Wait for admin response')
+            window.location.href="home.php"
         </script>
         <?php
 
@@ -33,4 +34,4 @@ if(isset($_POST['Submit']))
 
 }
 
-?>
+ ?> 

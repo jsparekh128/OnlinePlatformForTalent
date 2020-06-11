@@ -81,7 +81,7 @@ $meventid=$rset['meid']+1;
                             $cmd=mysqli_query($con,$sql);
                             
                         ?>
-                    <option value="-1" selected>--Select Category Name-- </option>
+                    <option value="-1" selected>--Select Category Name--</option>
                     <?php
                             while($rows=mysqli_fetch_array($cmd))
                             {

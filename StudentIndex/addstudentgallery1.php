@@ -45,7 +45,9 @@ if(isset($_POST['Upload']))
             $allowed_image_extension = array(
                 "png",
                 "jpg",
-                "jpeg"
+                "jpeg",
+                "JPG",
+                "JPEG"
             );
     
     // Get image file extension
@@ -123,7 +125,8 @@ if(isset($_POST['Upload']))
                                 "mp4",
                                 "avi",
                                 "3gp",
-                                "mpeg"
+                                "mpeg",
+								"mts"
                             );
                     
                     // Get image file extension

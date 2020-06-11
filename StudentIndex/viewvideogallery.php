@@ -3,8 +3,7 @@ require("config.php");
 include("studentheader.php");
 if(session_status()==PHP_SESSION_NONE)
 {
-session_start();
-
+  session_start();
 }
     if(isset($_SESSION['StudId']))
     {
@@ -45,10 +44,7 @@ session_start();
   <!-- End plugin css for this page -->
   <!-- inject:css -->
   <link rel="stylesheet" href="css/style.css">
-  <style type="text/css">
-
-
-  </style>
+  
   
 
   <!-- endinject -->
@@ -57,6 +53,7 @@ session_start();
                $("[data-fancybox]").fancybox();
             </script>
 </head>
+<a class="btn">
 
 
 <body>
@@ -72,7 +69,7 @@ session_start();
                         $videoURL=$rows['UploadPath'];
                         ?>
                                 <video width="300" height="auto" controls> 
-                                    <source src="<?php echo $videoURL; ?>" type="video/mp4">
+                                    <source  src="<?php echo $videoURL; ?>" type="video/mp4">
                                  </video>    
                                   
                         

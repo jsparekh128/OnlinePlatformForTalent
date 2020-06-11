@@ -9,10 +9,17 @@ session_start();
 if(isset($_POST['Submit']))
 {
     $meventid=$_SESSION['OEventId'];
-    $mchckFileUpload=$_POST['chckFileUpload1'];
-    //counting
-    $count = count($mchckFileUpload);
-    //implode
+    if(isset($_POST['chckFileUpload1']))
+        {
+        $mchckFileUpload=$_POST['chckFileUpload1'];
+        //counting
+        $count = count($mchckFileUpload);
+        //implode
+    }
+    else{
+        $count=0;
+    }
+   
 
     if($count != "1")
     {

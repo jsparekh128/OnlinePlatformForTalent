@@ -13,7 +13,7 @@ $number = mysqli_num_rows($cmd);
 	  ?>
 	  <script type="text/javascript">
 	  alert("This Category already exists");
-	  //window.location.reload();
+	  window.location.href="addcategory.php"
 	  </script>
 <?php
   }
